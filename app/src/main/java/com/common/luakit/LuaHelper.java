@@ -27,7 +27,7 @@ public class LuaHelper {
     static { System.loadLibrary("luaFramework");}
 
     public static void startLuaKit(Context c){
-        String toPath = PathUtils.getDataDirectory(c)+"/lua";
+        String toPath = PathUtils.getDataDirectory(c)+"/flutter_assets/lua";
         File toFolder = new File(toPath);
         if (toFolder.exists()){
             deleteDirection(toFolder);
